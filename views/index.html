@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Creanetis</title>
+	</head>
+	<body style="text-align: center;">
+		<h1>Transactions</h1><br><br>
+
+		<section>
+			<hr><h3>Search transaction</h3><hr><br>
+			<form action="/api/search_transaction" method="post">
+				<label>ID:</label><br>
+				<input type="text" name="id_to_search"><br><br>
+				<button type="submit">Search</button>
+			</form>	
+		</section>
+<br><br>
+		<section>
+			<hr><h3>Create transaction</h3><hr><br>
+			<form action="/api/create_transaction" method="post">
+				<label>Issuer name:</label><br>
+				<input type="text" name="issuer_name"><br><br>
+				<label>Created at:</label><br>
+				<input type="text" name="create_date"><br><br>
+				<label>Amount:</label><br>
+				<input type="number" name="amount"><br><br>
+				<label>Card type:</label><br>
+				<input type="text" name="card_type"><br><br>
+				<label>Card number:</label><br>
+				<input type="text" name="card_number"><br><br>
+				<button type="submit">Create</button>
+			</form>
+		</section>
+<br><br>
+		<section>
+			<hr><h3>Delete transaction</h3><hr><br>
+			<form action="/api/delete_transaction" method="post">
+				<label>ID:</label><br>
+				<input type="text" name="id_to_delete" /><br><br>
+				<button type="submit">Delete</button>
+			</form>
+		</section>
+<br><br>
+		<section>
+			<hr><h3>Edit transaction</h3><hr><br>
+			<form action="/api/edit_transaction" method="post">
+				<label>ID:</label><br>
+				<input type="text" name="id_to_edit"><br><br>
+				<label>Issuer name:</label><br>
+				<input type="text" name="issuer_name_to_edit"><br><br>
+				<label>Created at:</label><br>
+				<input type="text" name="create_date_to_edit"><br><br>
+				<label>Amount:</label><br>
+				<input type="number" name="amount_to_edit"><br><br>
+				<label>Card type:</label><br>
+				<input type="text" name="card_type_to_edit"><br><br>
+				<label>Card number:</label><br>
+				<input type="text" name="card_number_to_edit"><br><br>
+				<button type="submit">Edit</button>
+			</form>
+		</section>
+<br><br>
+		<section>
+			<hr><h3>Upload transactions</h3><hr><br>
+			<form action="/api/upload_transaction" method="post">
+				<label>File namee:</label><br><br>
+				<input type="file" name="file_to_upload"><br><br>
+				<button type="submit">Upload</button>
+			</form>
+		</section>
+<br><br>
+		<section>
+			<hr><h3>Download transactions</h3><hr><br>
+			<form action="/api/download_transaction" method="post">
+				<label>ID:</label><br>
+				<input type="text" name="id_to_download"><br><br>
+				<button type="submit">Download</button>
+			</form>
+		</section>
+<br><br>
+	</body>
+</html>

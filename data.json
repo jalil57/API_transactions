@@ -1,0 +1,16 @@
+[
+   {
+      "issuer_name":"abdelaziz bouteflika",
+      "created_at":"2018-04-12T15:25:21.647Z",
+      "amount":2847,
+      "card_type":"VISA",
+      "card_number":"4591440727630696"
+   },
+   {
+      "issuer_name":"Jean Michel",
+      "created_at":"2018-03-14T10:12:21.647Z",
+      "amount":12,
+      "card_type":"MASTERCARD",
+      "card_number":"5546783961468866"
+   }
+]
